@@ -34,7 +34,7 @@ class TopicBp2050Themes extends BlockBase {
     
     $items = [];
     
-    $target_on = '<a class="bpt-tile bpt-{{weight}}" href="{{uri}}" title="{{label}}" data-toggle="tooltip" target="_blank">{{label}}</a>';
+    $target_on = '<a class="bpt-tile bpt-{{weight}}" href="{{uri}}" title="{{label}}" data-toggle="tooltip">{{label}}</a>';
     $target_off = '<span class="bpt-tile bpt-{{weight}}">{{label}}</span>';
 
     $lang = \Drupal::languageManager()->getCurrentLanguage()->getId();
@@ -61,7 +61,7 @@ class TopicBp2050Themes extends BlockBase {
     if (array_key_exists('topic_bp2050_logo', $config) && !empty($config['topic_bp2050_logo'])) {
       $items[] = [
         '#type' => 'inline_template',
-        '#template' => '<a href="https://blue-pacific-2050.pacificdata.org/" target="_blank" title="Visit the Blue Pacific 2050 Dashboard" data-toggle="tooltip" class="bpt-logo">{{label}}</a>',
+        '#template' => '<a href="https://blue-pacific-2050.pacificdata.org/" title="Visit the Blue Pacific 2050 Dashboard" data-toggle="tooltip" class="bpt-logo">{{label}}</a>',
         '#context' => [
           'label' => $this->t('Blue Pacific 2050 Dashboard'),
         ]

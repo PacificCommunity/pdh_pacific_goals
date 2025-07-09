@@ -34,7 +34,7 @@ class TopicSdgGoals extends BlockBase {
     
     $items = [];
     
-    $target_on = '<a class="sdg-tile sdg-{{weight}}" href="{{uri}}" title="{{label}}" data-toggle="tooltip" target="_blank">{{label}}</a>';
+    $target_on = '<a class="sdg-tile sdg-{{weight}}" href="{{uri}}" title="{{label}}" data-toggle="tooltip">{{label}}</a>';
     $target_off = '<span class="sdg-tile sdg-{{weight}}">{{label}}</span>';
 
     $lang = \Drupal::languageManager()->getCurrentLanguage()->getId();
@@ -61,7 +61,7 @@ class TopicSdgGoals extends BlockBase {
     if (array_key_exists('topic_sdg_logo', $config) && !empty($config['topic_sdg_logo'])) {
       $items[] = [
         '#type' => 'inline_template',
-        '#template' => '<a href="https://pacificdata.org/dashboard/17-goals-transform-pacific" target="_blank" title="Visit the SDG Dashboard" data-toggle="tooltip" class="sdg-logo">{{label}}</a>',
+        '#template' => '<a href="https://pacificdata.org/dashboard/17-goals-transform-pacific" title="Visit the SDG Dashboard" data-toggle="tooltip" class="sdg-logo">{{label}}</a>',
         '#context' => [
           'label' => $this->t('Sustainable Development Goals')
         ]
