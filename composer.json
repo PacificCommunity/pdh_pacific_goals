@@ -1,0 +1,9 @@
+{
+    "name": "pacific_community/pdh_pacific_goals",
+    "description": "SDG Goals and BP2050 tiles to highlight related goals on a page",
+    "type": "drupal-module",
+    "homepage": "https://github.com/PacificCommunity/pdh_pacific_goals",
+    "require": {
+        "drupal/core": "^9 || ^10 || ^11"
+    }
+}

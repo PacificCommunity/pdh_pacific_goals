@@ -1,0 +1,8 @@
+sdg:
+  css:
+    component:
+      css/sdg.css: {}
+bp2050:
+  css:
+    component:
+      css/bp2050.css: {}

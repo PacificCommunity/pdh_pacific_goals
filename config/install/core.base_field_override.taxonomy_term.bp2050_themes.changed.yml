@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.bp2050_themes
+id: taxonomy_term.bp2050_themes.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: bp2050_themes
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

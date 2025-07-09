@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.bp2050_themes
+  module:
+    - path
+id: taxonomy_term.bp2050_themes.path
+field_name: path
+entity_type: taxonomy_term
+bundle: bp2050_themes
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

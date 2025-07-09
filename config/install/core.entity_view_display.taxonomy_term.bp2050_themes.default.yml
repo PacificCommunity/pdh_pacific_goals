@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.bp2050_themes.field_dashboard_link
+    - taxonomy.vocabulary.bp2050_themes
+  module:
+    - link
+    - text
+id: taxonomy_term.bp2050_themes.default
+targetEntityType: taxonomy_term
+bundle: bp2050_themes
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_dashboard_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

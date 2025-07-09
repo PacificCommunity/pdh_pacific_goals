@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Blue Pacific 2050 Themes'
+vid: bp2050_themes
+description: null
+weight: 0
+new_revision: false

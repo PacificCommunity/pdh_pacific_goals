@@ -1,0 +1,131 @@
+/* Blue Pacific 2050 Themes Stylesheet */
+
+.topic-bp-themes .bpt-tile,
+.topic-bp-themes .bpt-logo {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background: url(/modules/contrib/pdh_pacific_goals/assets/bp2050-icons-48x48.png) no-repeat -336px 0px;
+  text-indent: -9999px;
+  overflow: hidden;
+  margin: 0 6px 6px 0;
+}
+.topic-bp-themes span.bpt-tile {
+  display: none;
+}
+.topic-bp-themes .bpt-1 {
+  background-position: 0px 0px;
+}
+.topic-bp-themes .bpt-2 {
+  background-position: -48px 0px;
+}
+.topic-bp-themes .bpt-3 {
+  background-position: -96px 0px;
+}
+.topic-bp-themes .bpt-4 {
+  background-position: -144px 0px;
+}
+.topic-bp-themes .bpt-5 {
+  background-position: -192px 0px;
+}
+.topic-bp-themes .bpt-6 {
+  background-position: -240px 0px;
+}
+.topic-bp-themes .bpt-7 {
+  background-position: -288px 0px;
+}
+
+.topic-bp-themes.double-trouble .bpt-tile,
+.topic-bp-themes.double-trouble .bpt-logo {
+  width: 96px;
+  height: 96px;
+  background: url(/modules/contrib/pdh_pacific_goals/assets/bp2050-icons-96x96.png) no-repeat -672px 0px;
+}
+.topic-bp-themes.double-trouble .bpt-1 {
+  background-position: 0px 0px;
+}
+.topic-bp-themes.double-trouble .bpt-2 {
+  background-position: -96px 0px;
+}
+.topic-bp-themes.double-trouble .bpt-3 {
+  background-position: -192px 0px;
+}
+.topic-bp-themes.double-trouble .bpt-4 {
+  background-position: -288px 0px;
+}
+.topic-bp-themes.double-trouble .bpt-5 {
+  background-position: -384px 0px;
+}
+.topic-bp-themes.double-trouble .bpt-6 {
+  background-position: -480px 0px;
+}
+.topic-bp-themes.double-trouble .bpt-7 {
+  background-position: -576px 0px;
+}
+
+@media (min-width: 768px) {
+  .topic-bp-themes span.bpt-tile {
+    display: inline-block;
+  }
+  .topic-bp-themes span.bpt-1 {
+    background-position: 0px -48px;
+  }
+  .topic-bp-themes span.bpt-2 {
+    background-position: -48px -48px;
+  }
+  .topic-bp-themes span.bpt-3 {
+    background-position: -96px -48px;
+  }
+  .topic-bp-themes span.bpt-4 {
+    background-position: -144px -48px;
+  }
+  .topic-bp-themes span.bpt-5 {
+    background-position: -192px -48px;
+  }
+  .topic-bp-themes span.bpt-6 {
+    background-position: -240px -48px;
+  }
+  .topic-bp-themes span.bpt-7 {
+    background-position: -288px -48px;
+  }
+  .topic-bp-themes.double-trouble span.bpt-1 {
+    background-position: 0px -96px;
+  }
+  .topic-bp-themes.double-trouble span.bpt-2 {
+    background-position: -96px -96px;
+  }
+  .topic-bp-themes.double-trouble span.bpt-3 {
+    background-position: -192px -96px;
+  }
+  .topic-bp-themes.double-trouble span.bpt-4 {
+    background-position: -288px -96px;
+  }
+  .topic-bp-themes.double-trouble span.bpt-5 {
+    background-position: -384px -96px;
+  }
+  .topic-bp-themes.double-trouble span.bpt-6 {
+    background-position: -480px -96px;
+  }
+  .topic-bp-themes.double-trouble span.bpt-7 {
+    background-position: -576px -96px;
+  }
+}
+
+@media (min-width: 992px) {
+  .topic-bp-themes a.bpt-tile:hover,
+  .topic-bp-themes a.bpt-logo:hover {
+    transform: translate(0, -3px);
+  }
+}
+
+/* French version */
+/* UNAVAILABLE...
+body.spc-lang-fr .topic-bp-themes .bpt-tile,
+body.spc-lang-fr .topic-bp-themes .bpt-logo {
+  background-image: url(/modules/contrib/pdh_pacific_goals/assets/bp2050-icons-48x48-fr.png);
+}
+body.spc-lang-fr .topic-bp-themes.double-trouble .bpt-tile,
+body.spc-lang-fr .topic-bp-themes.double-trouble .bpt-logo {
+  background-image: url(/modules/contrib/pdh_pacific_goals/assets/bp2050-icons-96x96-fr.png);
+}
+*/
