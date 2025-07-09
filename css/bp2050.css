@@ -1,11 +1,16 @@
 /* Blue Pacific 2050 Themes Stylesheet */
 
+.topic-bp-themes .bpt-logo {
+  border: 1px solid #c9d4e2;
+}
+
 .topic-bp-themes .bpt-tile,
 .topic-bp-themes .bpt-logo {
   display: inline-block;
   width: 48px;
   height: 48px;
-  background: url(/modules/contrib/pdh_pacific_goals/assets/bp2050-icons-48x48.png) no-repeat -336px 0px;
+  background: url(/modules/contrib/pdh_pacific_goals/assets/bp2050-icons-48x48.png)
+    no-repeat -336px 0px;
   text-indent: -9999px;
   overflow: hidden;
   margin: 0 6px 6px 0;
@@ -39,7 +44,8 @@
 .topic-bp-themes.double-trouble .bpt-logo {
   width: 96px;
   height: 96px;
-  background: url(/modules/contrib/pdh_pacific_goals/assets/bp2050-icons-96x96.png) no-repeat -672px 0px;
+  background: url(/modules/contrib/pdh_pacific_goals/assets/bp2050-icons-96x96.png)
+    no-repeat -672px 0px;
 }
 .topic-bp-themes.double-trouble .bpt-1 {
   background-position: 0px 0px;

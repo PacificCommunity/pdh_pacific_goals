@@ -1,11 +1,16 @@
 /* SDG Goals Stylesheet */
 
+.topic-sdg-goals .sdg-logo {
+  border: 1px solid #c9d4e2;
+}
+
 .topic-sdg-goals .sdg-tile,
 .topic-sdg-goals .sdg-logo {
   display: inline-block;
   width: 48px;
   height: 48px;
-  background: url(/modules/custom/pdh_pacific_goals/assets/SDG-goals-48x48.png) no-repeat -240px -96px;
+  background: url(/modules/contrib/pdh_pacific_goals/assets/SDG-goals-48x48.png)
+    no-repeat -240px -96px;
   text-indent: -9999px;
   overflow: hidden;
   margin: 0 6px 6px 0;
@@ -68,7 +73,8 @@
 .topic-sdg-goals.double-trouble .sdg-logo {
   width: 96px;
   height: 96px;
-  background: url(/modules/custom/pdh_pacific_goals/assets/SDG-goals-96x96.png) no-repeat -480px -192px;
+  background: url(/modules/contrib/pdh_pacific_goals/assets/SDG-goals-96x96.png)
+    no-repeat -480px -192px;
 }
 .topic-sdg-goals.double-trouble .sdg-1 {
   background-position: 0px 0px;
@@ -235,9 +241,9 @@
 }
 body.spc-lang-fr .topic-sdg-goals .sdg-tile,
 body.spc-lang-fr .topic-sdg-goals .sdg-logo {
-  background-image: url(/modules/custom/pdh_pacific_goals/assets/SDG-goals-48x48-fr.png);
+  background-image: url(/modules/contrib/pdh_pacific_goals/assets/SDG-goals-48x48-fr.png);
 }
 body.spc-lang-fr .topic-sdg-goals.double-trouble .sdg-tile,
 body.spc-lang-fr .topic-sdg-goals.double-trouble .sdg-logo {
-  background-image: url(/modules/custom/pdh_pacific_goals/assets/SDG-goals-96x96-fr.png);
+  background-image: url(/modules/contrib/pdh_pacific_goals/assets/SDG-goals-96x96-fr.png);
 }
