@@ -30,13 +30,13 @@ Step 1: Add repository in composer.json
 Step 2: Install via composer
 
 ```
-composer require pacific_community/pdh_pacific_goals
+composer require pacific_community/pdh_pacific_goals:^1.0
 ```
 
 Step 3: Enable via drush (or GUI)
 
 ```
-drush en pacific_community/pdh_pacific_goals
+drush en pdh_pacific_goals
 ```
 
 Step 4 (optional): Create a new paragraph type
