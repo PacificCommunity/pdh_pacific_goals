@@ -85,7 +85,7 @@ function pdh_pacific_goals_install() {
     $values = [
       'vid' => $vid,
       'name' => $title,
-      'field_bp_dashboard_link' => [['uri' => $uri]],
+      'field_dashboard_link' => [['uri' => $uri]],
       'weight'  => $weight
     ];
     $term = Term::create($values);
