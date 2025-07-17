@@ -5,8 +5,7 @@ namespace Drupal\pdh_pacific_goals\Plugin\Block;
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Block\BlockPluginInterface;
 use Drupal\Core\Form\FormStateInterface;
-// use Drupal\Core\Link;
-// use Drupal\Core\Url;
+use Drupal\Core\Url;
 
 /**
  * Highlight and link to BP2050 Dashboard
@@ -46,13 +45,28 @@ class TopicBp2050Themes extends BlockBase {
         $term = $term->getTranslation($lang);
       }
 
+      // Get the dashboard link URI and convert it to a proper URL if it's an internal link
+      $dashboard_link_field = $term->get('field_dashboard_link');
+      $uri = '';
+      if (!$dashboard_link_field->isEmpty()) {
+        $link_uri = $dashboard_link_field->getValue()[0]['uri'];
+        // Only convert internal Drupal links (entity:, internal:, route:)
+        if (strpos($link_uri, 'entity:') === 0 || strpos($link_uri, 'internal:') === 0 || strpos($link_uri, 'route:') === 0) {
+          $url = Url::fromUri($link_uri);
+          $uri = $url->toString();
+        } else {
+          // External links or already proper URLs, use as-is
+          $uri = $link_uri;
+        }
+      }
+
       $items[] = [
         '#type' => 'inline_template',
         '#template' => !empty($config['topic_bp2050_themes'][$w+1])?$target_on:$target_off,
         '#context' => [
           'weight' => $w+1,
           'label' => $term->get('name')->value,
-          'uri' => $term->get('field_bp_dashboard_link')->getValue()[0][ 'uri']
+          'uri' => $uri
         ]
       ];
     }
