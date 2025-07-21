@@ -7,6 +7,8 @@ The PDH Pacific Goals module is a Drupal module that creates 2 blocks
 
 Each tile can be active or inactive (grayed out) and links to the Pacific Data Hub dashboards when active.
 
+On install, the module also creates taxonomies with links to related dashboards on pacificdata.org.
+
 ## REQUIREMENTS
 
 - Content Translation
