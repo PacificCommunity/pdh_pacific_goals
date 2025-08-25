@@ -2,7 +2,7 @@ name: 'PDH Pacific Goals'
 type: module
 description: 'Provides blocks to display related SDGs and BP2050 themes on a page'
 package: SPC
-version: '1.0.2'
+version: '1.0.3'
 core_version_requirement: ^10 || ^11
 dependencies:
   - content_translation
